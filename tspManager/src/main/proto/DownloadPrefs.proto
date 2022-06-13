@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option java_package = "com.zk.car.upgrade";
+option java_multiple_files = true;
+
+message DownloadProgress {
+  int64 progress = 1;
+  int64 total = 2;
+  bool isDone = 3;
+
+  //Demo:
+  //string query = 1; // String类型
+  //int32 page_number = 2; // int类型 sint32
+  //int64 result_per_page = 3;// long类型 sint64
+  //bool age = 4;// boolean类型
+  //double student_name = 5;// double类型
+  //float student_fs = 6;// float类型
+  //bytes student_fs_dd = 7;// bytes类型
+}
