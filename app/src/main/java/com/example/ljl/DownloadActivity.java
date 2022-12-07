@@ -49,6 +49,22 @@ public class DownloadActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_download);
 
+//        TextView textView = findViewById(R.id.mmap_text);
+//        MMKV mmkv = MMKV.mmkvWithID("SidebarAppList", MMKV.MULTI_PROCESS_MODE);
+//        //测试mmap数据共享
+//        findViewById(R.id.get_mmap_data).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                LogUtil.dlog(TAG, "get_mmap_data onClick");
+//                //写入数据
+////                mmkv.putString("test", "testValue");
+//                String test = mmkv.decodeString("test", "");
+//                LogUtil.dlog(TAG, "decodeString: " + test);
+//                textView.setText(test);
+//            }
+//        });
+
+        //测试下载流程
         findViewById(R.id.download_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
