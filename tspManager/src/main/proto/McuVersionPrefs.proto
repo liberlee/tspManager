@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+option java_package = "com.zk.car.upgrade";
+option java_multiple_files = true;
+
+message McuVersion {
+  int32 mcu_upgrade_status = 1;
+  int32 mcu_request_payload_data = 2;
+  int32 mcu_upgrade_raedy_status = 3;
+  int32 mcu_run_position = 4;
+  int32 mcu_current_position_program_status = 5;
+  int32 mcu_upgrade_fail = 6;
+  int64 mcu_retransmission_block_num = 7;
+  string mcu_pbl_version = 8;
+  string mcu_a_version = 9;
+  string mcu_b_version = 10;
+  string mcu_nvm_version = 11;
+  int32 mcu_upgrade_file_transfer_status = 12;
+  string mcu_update_bean = 13;
+
+  //Demo:
+  //string query = 1; // String类型
+  //int32 page_number = 2; // int类型 sint32
+  //int64 result_per_page = 3;// long类型 sint64
+  //bool age = 4;// boolean类型
+  //double student_name = 5;// double类型
+  //float student_fs = 6;// float类型
+  //bytes student_fs_dd = 7;// bytes类型
+}
